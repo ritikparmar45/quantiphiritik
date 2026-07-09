@@ -177,7 +177,7 @@ function App() {
               
               <div className="price-value-display">
                 <div className="price-box">
-                  <span className="currency">$</span>
+                  <span className="currency">₹</span>
                   <input
                     type="number"
                     value={priceRange.min}
@@ -189,7 +189,7 @@ function App() {
                 </div>
                 <div className="price-separator">—</div>
                 <div className="price-box">
-                  <span className="currency">$</span>
+                  <span className="currency">₹</span>
                   <input
                     type="number"
                     value={priceRange.max}
@@ -305,7 +305,7 @@ function App() {
                 ))}
                 {(priceRange.min > 0 || priceRange.max < 400) && (
                   <span className="pill" onClick={() => setPriceRange({ min: 0, max: 400 })}>
-                    ${priceRange.min}-${priceRange.max} &times;
+                    ₹{priceRange.min}-₹{priceRange.max} &times;
                   </span>
                 )}
                 {minRating > 0 && (
@@ -396,7 +396,7 @@ function App() {
 
                     <div className="product-card-footer">
                       <div className="product-price">
-                        <span className="price-symbol">$</span>
+                        <span className="price-symbol">₹</span>
                         <span className="price-value">{product.price.toFixed(2)}</span>
                       </div>
                       
