@@ -1,0 +1,222 @@
+export const products = [
+  {
+    id: "p1",
+    name: "Wireless Noise-Canceling Headphones",
+    category: "Electronics",
+    brand: "SoundAudio",
+    price: 199.99,
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Premium wireless over-ear headphones with active noise cancellation."
+  },
+  {
+    id: "p2",
+    name: "Smart Watch Series 5",
+    category: "Electronics",
+    brand: "TechWear",
+    price: 249.99,
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Track your fitness, heart rate, and notifications on the go."
+  },
+  {
+    id: "p3",
+    name: "Mechanical Gaming Keyboard",
+    category: "Electronics",
+    brand: "KeyClick",
+    price: 89.99,
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "RGB mechanical keyboard with tactile blue switches."
+  },
+  {
+    id: "p4",
+    name: "Ultra-Wide Gaming Monitor",
+    category: "Electronics",
+    brand: "ViewMax",
+    price: 349.99,
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&auto=format&fit=crop&q=60",
+    inStock: false,
+    description: "34-inch curved ultra-wide gaming monitor with 144Hz refresh rate."
+  },
+  {
+    id: "p5",
+    name: "Classic Leather Jacket",
+    category: "Fashion",
+    brand: "UrbanStyle",
+    price: 129.99,
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Timeless black leather jacket crafted from premium sheepskin."
+  },
+  {
+    id: "p6",
+    name: "Running Sneakers v2",
+    category: "Fashion",
+    brand: "FitFoot",
+    price: 79.99,
+    rating: 4.2,
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Lightweight and breathable running shoes with maximum cushioning."
+  },
+  {
+    id: "p7",
+    name: "Designer Canvas Backpack",
+    category: "Fashion",
+    brand: "PackGo",
+    price: 49.99,
+    rating: 4.0,
+    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Water-resistant canvas backpack, perfect for daily commute or travel."
+  },
+  {
+    id: "p8",
+    name: "Polarized Sports Sunglasses",
+    category: "Fashion",
+    brand: "ShadeZone",
+    price: 24.99,
+    rating: 3.9,
+    image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "100% UV protection sunglasses suitable for outdoor cycling and running."
+  },
+  {
+    id: "p9",
+    name: "Ergonomic Office Chair",
+    category: "Home & Living",
+    brand: "ComfortSeat",
+    price: 189.99,
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1505797149-43b0069ec26b?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Mesh high-back office chair with adjustable lumbar support."
+  },
+  {
+    id: "p10",
+    name: "Stainless Steel Espresso Machine",
+    category: "Home & Living",
+    brand: "BrewMaster",
+    price: 299.99,
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1517256064527-09c53b2d0bc6?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "15-bar pump espresso maker with milk frother wand."
+  },
+  {
+    id: "p11",
+    name: "Smart LED Desk Lamp",
+    category: "Home & Living",
+    brand: "TechWear",
+    price: 34.99,
+    rating: 4.1,
+    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Dimmable desk lamp with wireless charging base and USB port."
+  },
+  {
+    id: "p12",
+    name: "Non-Stick Ceramic Cookware Set",
+    category: "Home & Living",
+    brand: "KitchenPro",
+    price: 149.99,
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "10-piece eco-friendly non-stick ceramic pots and pans set."
+  },
+  {
+    id: "p13",
+    name: "The Science of Cooking (Hardcover)",
+    category: "Books",
+    brand: "KitchenPro",
+    price: 19.99,
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Understand the science behind food preparation and techniques."
+  },
+  {
+    id: "p14",
+    name: "Minimalist Web Design (Paperback)",
+    category: "Books",
+    brand: "ShadeZone",
+    price: 29.99,
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "A comprehensive guide to creating clean and functional user interfaces."
+  },
+  {
+    id: "p15",
+    name: "Epic Fantasy Novel: The Lost Kingdom",
+    category: "Books",
+    brand: "SoundAudio",
+    price: 14.99,
+    rating: 3.8,
+    image: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=500&auto=format&fit=crop&q=60",
+    inStock: false,
+    description: "Book one of the epic historical fantasy trilogy."
+  },
+  {
+    id: "p16",
+    name: "Yoga Mat & Carrying Strap",
+    category: "Sports & Outdoors",
+    brand: "FitFoot",
+    price: 22.99,
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Eco-friendly non-slip yoga mat with carrying strap included."
+  },
+  {
+    id: "p17",
+    name: "Adjustable Dumbbell Set (50 lbs)",
+    category: "Sports & Outdoors",
+    brand: "FitFoot",
+    price: 159.99,
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "All-in-one adjustable weight set for versatile home gym training."
+  },
+  {
+    id: "p18",
+    name: "Camping Tent (4-Person)",
+    category: "Sports & Outdoors",
+    brand: "PackGo",
+    price: 99.99,
+    rating: 4.2,
+    image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Waterproof dome tent with rainfly and easy setup design."
+  },
+  {
+    id: "p19",
+    name: "Insulated Sports Water Bottle",
+    category: "Sports & Outdoors",
+    brand: "ShadeZone",
+    price: 18.99,
+    rating: 4.1,
+    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Double-walled vacuum insulated bottle keeps drinks cold for 24 hours."
+  },
+  {
+    id: "p20",
+    name: "Electric Scooter Lite",
+    category: "Sports & Outdoors",
+    brand: "TechWear",
+    price: 299.99,
+    rating: 3.5,
+    image: "https://images.unsplash.com/photo-1597237154674-1a002274cef7?w=500&auto=format&fit=crop&q=60",
+    inStock: true,
+    description: "Foldable electric scooter with 15 miles range and 15mph top speed."
+  }
+];
