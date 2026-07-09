@@ -5,8 +5,6 @@ import {
   Star, 
   ShoppingBag, 
   SlidersHorizontal,
-  ChevronRight,
-  Sparkles,
   Inbox
 } from 'lucide-react';
 import './App.css';
@@ -21,7 +19,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch products from backend whenever filters change
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -31,7 +28,6 @@ function App() {
           params.append('categories', selectedCategories.join(','));
         }
         
-        // Only append if they deviate from default bounds
         params.append('minPrice', priceRange.min);
         params.append('maxPrice', priceRange.max);
         
@@ -62,7 +58,6 @@ function App() {
     fetchProducts();
   }, [selectedCategories, priceRange, minRating]);
 
-  // Handle Category check/uncheck
   const handleCategoryChange = (category) => {
     setSelectedCategories((prev) =>
       prev.includes(category)
@@ -71,7 +66,6 @@ function App() {
     );
   };
 
-  // Reset all filters to initial state
   const handleResetFilters = () => {
     setSelectedCategories([]);
     setPriceRange({ min: 0, max: 400 });
@@ -79,7 +73,6 @@ function App() {
     setSortBy('featured');
   };
 
-  // Helper to render star icons
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -119,7 +112,6 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* Premium Header */}
       <header className="app-header">
         <div className="logo-section">
           <div className="logo-icon-bg">
@@ -131,10 +123,7 @@ function App() {
         <p className="header-subtitle">Discover premium items with precision filtering</p>
       </header>
 
-      {/* Main Content Layout */}
       <main className="main-layout">
-        
-        {/* Sticky Sidebar */}
         <aside className="sidebar">
           <div className="sidebar-header">
             <div className="sidebar-title">
@@ -150,8 +139,6 @@ function App() {
           </div>
 
           <div className="filter-sections">
-            
-            {/* Category Filter */}
             <div className="filter-group">
               <h3>Categories</h3>
               <div className="checkbox-list">
@@ -182,7 +169,6 @@ function App() {
               </div>
             </div>
 
-            {/* Price Dual Slider */}
             <div className="filter-group">
               <div className="price-header">
                 <h3>Price Range</h3>
@@ -249,7 +235,6 @@ function App() {
               </div>
             </div>
 
-            {/* Ratings Filter */}
             <div className="filter-group">
               <h3>Minimum Rating</h3>
               <div className="radio-list">
@@ -267,7 +252,7 @@ function App() {
                   </span>
                 </label>
 
-                {[4, 3, 2, 1].map((stars) => {
+                {[5, 4, 3, 2, 1].map((stars) => {
                   const ratingFacet = meta?.facets?.ratings?.find(r => r.rating === stars);
                   const isChecked = minRating === stars;
                   const isDisabled = (ratingFacet?.activeCount || 0) === 0 && !isChecked;
@@ -301,9 +286,7 @@ function App() {
           </div>
         </aside>
 
-        {/* Product Inventory Grid Section */}
         <section className="catalog-section">
-          {/* Active Filter Summary Bar */}
           <div className="catalog-header">
             <div className="catalog-header-left">
               <div className="results-count">
@@ -314,7 +297,6 @@ function App() {
                 )}
               </div>
 
-              {/* Active Pills */}
               <div className="active-pills">
                 {selectedCategories.map(cat => (
                   <span key={cat} className="pill" onClick={() => handleCategoryChange(cat)}>
@@ -350,7 +332,6 @@ function App() {
             </div>
           </div>
 
-          {/* Loader or Error or Results */}
           {loading && products.length === 0 ? (
             <div className="loader-container">
               <div className="spinner"></div>
@@ -367,7 +348,6 @@ function App() {
               </div>
             </div>
           ) : products.length === 0 ? (
-            /* Zero Items Screen */
             <div className="no-results-screen">
               <div className="no-results-card">
                 <div className="no-results-icon-bg">
@@ -382,7 +362,6 @@ function App() {
               </div>
             </div>
           ) : (
-            /* Products Grid */
             <div className="products-grid">
               {sortedProducts.map((product) => (
                 <article key={product.id} className="product-card">
